@@ -53,8 +53,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     //検索機能
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //searchText
+        taskArray = realm.objects(Task.self).where({ $0.category == searchText})
+        tableView.reloadData()
+       // print(filteredTask)
+       // print(filteredTask.count)
     }
+    
+    
+   
+    
     
     //各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

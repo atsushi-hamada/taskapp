@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mgz-Nf-5WM">
-                                <rect key="frame" x="0.0" y="133" width="393" height="685"/>
+                                <rect key="frame" x="0.0" y="168" width="393" height="650"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="TJV-JF-lAH" detailTextLabel="VWC-lT-U42" style="IBUITableViewCellStyleSubtitle" id="pca-Lj-fPJ">
@@ -46,8 +46,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <searchBar contentMode="redraw" ambiguous="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-ux-huo">
-                                <rect key="frame" x="0.0" y="90" width="208" height="56"/>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-ux-huo">
+                                <rect key="frame" x="10" y="100" width="373" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -55,11 +55,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Mgz-Nf-5WM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BEF-FD-1Kg"/>
-                            <constraint firstItem="Mgz-Nf-5WM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Kf4-Hm-bCn"/>
+                            <constraint firstItem="I6Q-ux-huo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="EH5-28-1P0"/>
+                            <constraint firstItem="Mgz-Nf-5WM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="Kf4-Hm-bCn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mgz-Nf-5WM" secondAttribute="trailing" id="Qzy-CI-quz"/>
-                            <constraint firstItem="I6Q-ux-huo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="90" id="fiv-QL-DFm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I6Q-ux-huo" secondAttribute="trailing" constant="190" id="g9P-eD-SHA"/>
+                            <constraint firstItem="I6Q-ux-huo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Z5M-8Z-3H9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mgz-Nf-5WM" secondAttribute="bottom" id="hBT-H8-qn7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I6Q-ux-huo" secondAttribute="trailing" constant="10" id="l0P-kp-yJ8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nvU-Ad-BOO">
